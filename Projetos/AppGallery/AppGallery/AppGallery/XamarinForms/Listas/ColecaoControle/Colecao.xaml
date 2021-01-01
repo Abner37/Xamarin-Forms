@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Listas.ColecaoControle.Colecao"
+             Padding="10">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="CollectionView" />
+            <Label Text="Propriedades: ItemsSource, ItemTemplate, Header, Footer, EmptyView, ItemsLayout (LinearItemsLayout, GridItemsLayout), IsGrouped, GroupHeaderTemplate, GroupFooterTemplate, RemainingItemsThreshold(InfinityScroll)" />
+            <Label Text="Eventos: " />
+
+            <CollectionView x:Name="Colecao01" 
+                            IsGrouped="True" 
+                            RemainingItemsThreshold="4"
+                            RemainingItemsThresholdReached="Colecao01_RemainingItemsThresholdReached">
+
+                <CollectionView.ItemsLayout>
+                    <!--<LinearItemsLayout Orientation="Horizontal" ItemSpacing="10"/>-->
+                    <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="2" HorizontalItemSpacing="2"/>
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.Header>
+                    <Label Text="Cabeçalho" Padding="10" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="LightGray" FontAttributes="Bold"/>
+                </CollectionView.Header>
+
+                <CollectionView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding Nome}" TextColor="Red" Padding="10"/>
+                    </DataTemplate>
+                </CollectionView.GroupHeaderTemplate>
+
+                <CollectionView.GroupFooterTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <BoxView HeightRequest="0.5" Color="Gray" HorizontalOptions="FillAndExpand"/>
+                            <!--<Label Text="Fim: " />
+                            <Label Text="{Binding Nome}"/>-->
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.GroupFooterTemplate>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout BackgroundColor="#F2F2F2" Padding="10">
+                            <Label Text="{Binding Nome}" TextColor="Black"/>
+                            <Label Text="{Binding QtdeDeFranquias}" TextColor="Gray"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+                <CollectionView.EmptyView>
+                    <Label Text="Não há itens nesta lista!" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                           BackgroundColor="#F23E3E" Padding="10"/>
+                </CollectionView.EmptyView>
+
+                <CollectionView.Footer>
+                    <Label Text="Rodapé" Padding="10" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="LightGray" FontAttributes="Bold"/>
+                </CollectionView.Footer>
+
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

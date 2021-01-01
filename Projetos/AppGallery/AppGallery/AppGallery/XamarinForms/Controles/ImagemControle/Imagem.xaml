@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             xmlns:extension="clr-namespace:AppGallery.XamarinForms.Controles.ImagemControle"
+             
+             x:Class="AppGallery.XamarinForms.Controles.ImagemControle.Imagem">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+
+
+                <!-- Recurso -->
+                <Label Text="Source: Resource" TextColor="Black" />
+                <Image x:Name="Imagem01"
+                       Source="{extension:ImageResource AppGallery.XamarinForms.Controles.ImagemControle.background.png}"
+                       Margin="0, 0, 0, 30"/>
+
+                <!-- Arquivo : Imagens dentro dos projetos (SO) específico -->
+                <Label Text="Source: File"  TextColor="Black"/>
+                <Image x:Name="Imagem02"
+                       Source="logoXamarin.png"
+                       Margin="0, 0, 0, 30"/>
+
+                <!-- URI -->
+                <Label Text="Source: Uri"  TextColor="Black"/>
+                <Image Source="https://blog.construtoralaguna.com.br/wp-content/uploads/2017/08/Lago-de-Braies-Alpes-Italia-Construtora-Laguna.jpg"
+                       Margin="0, 0, 0, 30"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

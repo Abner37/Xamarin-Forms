@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Controles.CaixaDeRadioControle.CaixaDeRadio"
+             
+             Padding="10">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Text, TextColor, IsChecked" />
+            <RadioButton Text="C#" TextColor="BlueViolet" IsChecked="True"/>
+            <RadioButton Text="Java" TextColor="Red"/>
+            <RadioButton Text="JavaScript" TextColor="#CDCD00"/>
+            <RadioButton Text="PHP" TextColor="Blue"/>
+
+            <Label Text="GroupName, CheckedChanged" />
+            <RadioButton Text="Carro" 
+                         GroupName="veiculo"
+                         CheckedChanged="RadioButton_CheckedChanged"/>
+            <RadioButton Text="Moto" 
+                         GroupName="veiculo"
+                         CheckedChanged="RadioButton_CheckedChanged"/>
+            <RadioButton Text="Caminhão" 
+                         GroupName="veiculo"
+                         CheckedChanged="RadioButton_CheckedChanged"/>
+            <RadioButton Text="Ônibus" 
+                         GroupName="veiculo"
+                         CheckedChanged="RadioButton_CheckedChanged"/>
+            <RadioButton Text="Lancha" 
+                         GroupName="veiculo"
+                         CheckedChanged="RadioButton_CheckedChanged"/>
+            <RadioButton Text="Navio" 
+                         GroupName="veiculo"
+                         CheckedChanged="RadioButton_CheckedChanged"/>
+            <RadioButton Text="Helicóptero" 
+                         GroupName="veiculo"
+                         CheckedChanged="RadioButton_CheckedChanged"/>
+            <RadioButton Text="Avião" 
+                         GroupName="veiculo"
+                         CheckedChanged="RadioButton_CheckedChanged"/>
+
+            <Label x:Name="lblRadioChecked"  Text="" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

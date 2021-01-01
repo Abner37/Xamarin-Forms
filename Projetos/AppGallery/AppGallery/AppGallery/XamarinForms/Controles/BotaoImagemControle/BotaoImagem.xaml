@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Controles.BotaoImagemControle.BotaoImagem">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+
+            <Label Text="Source"
+                   HorizontalOptions="Center"/>
+            <ImageButton Source="send.png"
+                         BackgroundColor="White"
+                         BorderColor="Black" BorderWidth="2"
+                         HorizontalOptions="Center"
+                         Padding="5"/>
+
+            <Label Text="Aspect"
+                   HorizontalOptions="Center"/>
+            <ImageButton Source="send.png"
+                         Aspect="AspectFit"
+                         BackgroundColor="White"
+                         BorderColor="Black" BorderWidth="2"
+                         WidthRequest="200" HeightRequest="140"
+                         HorizontalOptions="Center"
+                         Padding="5"/>
+
+            <Label Text="Eventos: Clicked, Pressed, Released"
+                   HorizontalOptions="Center"/>
+            <ImageButton Source="send.png"
+                         BackgroundColor="White"
+                         BorderColor="Black" BorderWidth="2"
+                         HorizontalOptions="Center"
+                         Padding="5"
+                         
+                         Clicked="Clicado_Clicked"
+                         Pressed="Pressionado_Pressed"
+                         Released="Liberado_Released"/>
+            
+            <Label x:Name="LblClicado"
+                       Text="-"
+                       HorizontalOptions="Center"
+                       FontSize="15"/>
+            <Label x:Name="LblPressionado"
+                       Text="-"
+                       HorizontalOptions="Center"
+                       FontSize="15"/>
+            <Label x:Name="LblLiberado"
+                       Text="-"
+                       HorizontalOptions="Center"
+                       FontSize="15"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

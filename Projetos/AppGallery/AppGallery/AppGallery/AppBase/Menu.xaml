@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:local="clr-namespace:AppGallery.AppBase"
+                  x:Class="AppGallery.AppBase.Menu">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <ScrollView>
+                <StackLayout>
+
+                    <StackLayout BackgroundColor="#707070"
+                                 Padding="4">
+
+                        <Button Text="Página Inicial" TextColor="White" FontSize="15"
+                                HorizontalOptions="Start"
+                                BackgroundColor="Transparent"
+                                Clicked="AbrirPaginaInicial"/>
+                    
+                    </StackLayout>
+
+                    <StackLayout Margin="10"
+                                 Spacing="5">
+                    
+                        <Label Text="Páginas"
+                           FontSize="20"
+                           TextColor="CornflowerBlue"/>
+
+                        <StackLayout Margin="20,0"
+                                     Spacing="0">
+                        
+                            <Button Text="ContentPage"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirContentPage"/>
+                            <Button Text="NavigationPage"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirNavigationPage"/>
+                            <Button Text="Modal     "
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirPaginaModal"/>
+                            <Button Text="CarouselPage"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirCarouselPage"/>
+                            <Button Text="TabbedPage"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirTabbedPage"/>
+                            <Button Text="MasterDetailPage"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirMasterDetailPage"/>
+                        
+                        </StackLayout>
+
+                        <Label Text="Layouts"
+                           FontSize="20"
+                           TextColor="CornflowerBlue"/>
+
+                        <StackLayout Margin="20,0"
+                                     Spacing="0">
+                        
+                            <Button Text="StackLayout"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirStackLayout"/>
+                            <Button Text="GridLayout"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirGridLayout"/>
+                            <Button Text="AbsoluteLayout"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirAbsoluteLayout"/>
+                            <Button Text="RelativeLayout"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirRelativeLayout"/>
+                            <Button Text="FlexLayout"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirFlexLayout"/>
+                            <Button Text="ScrollView"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirScrollView"/>
+                            <Button Text="ContentView"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirContentView"/>
+                            <Button Text="Frame     "
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirFrame"/>
+                        
+                        </StackLayout>
+
+                        <Label Text="Controles"
+                           FontSize="20"
+                           TextColor="CornflowerBlue"/>
+
+                        <StackLayout Margin="20,0"
+                                     Spacing="0">
+
+                            <Button Text="BoxView "
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirBoxView"/>
+                            <Button Text="Label     "
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirLabel"/>
+                            <Button Text="Button  "
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirButton"/>
+                            <Button Text="ImageButton"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirImageButton"/>
+                            <Button Text="Image     "
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirImage"/>
+                            <Button Text="Entry     "
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirEntry"/>
+                            <Button Text="Editor    "
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirEditor"/>
+                            <Button Text="CheckBox"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirCheckBox"/>
+                            <Button Text="RadioButton"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirRadioButton"/>
+                            <Button Text="Switch    "
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirSwitch"/>
+                            <Button Text="Stepper   "
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirStepper"/>
+                            <Button Text="Slider    "
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirSlider"/>
+                            <Button Text="Picker    "
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirPicker"/>
+                            <Button Text="DatePicker"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirDatePicker"/>
+                            <Button Text="TimePicker"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirTimePicker"/>
+                            <Button Text="ActivityIndicator"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirActivityIndicator"/>
+                            <Button Text="ProgressBar"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirProgressBar"/>
+                            <Button Text="SearchBar"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirSearchBar"/>
+                            <Button Text="RefreshView"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirRefreshView"/>
+                            <Button Text="SwipeView"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirSwipeView"/>
+
+                        </StackLayout>
+
+                        <Label Text="Listas"
+                           FontSize="20"
+                           TextColor="CornflowerBlue"/>
+
+                        <StackLayout Margin="20,0"
+                                     Spacing="0">
+
+                            <Button Text="TableView"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirTableView"/>
+                            <Button Text="ListView"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirListView"/>
+                            <Button Text="CollectionView"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="Transparent"
+                                    Clicked="AbrirCollectionView"/>
+
+                        </StackLayout>
+
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <local:Inicio/>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

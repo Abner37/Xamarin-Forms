@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Controles.BarraDePesquisaControle.BarraDePesquisa"
+             
+             Padding="10">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Text, TextColor" />
+            <SearchBar Text="www.google.com.br" TextColor="blue" />
+
+            <Label Text="Placeholder, PlaceholderColor" />
+            <SearchBar Placeholder="Digite aqui..." PlaceholderColor="LightBlue" />
+
+            <Label Text="FontFamily, FontSize, FontAttributes, CharacterSpacing" />
+            <SearchBar FontFamily="sans-serif-light" FontSize="18" FontAttributes="Italic" CharacterSpacing="3"/>
+
+            <Label Text="CancelButtonColor" />
+            <SearchBar CancelButtonColor="Blue"/>
+
+            <Label Text="Eventos: TextChanged, SearchButtonPressed" />
+            <SearchBar TextChanged="SearchBar_TextChanged"
+                       SearchButtonPressed="SearchBar_SearchButtonPressed"/>
+
+            <Label x:Name="lblTextChanged"/>
+            <Label x:Name="lblSearchButtonPressed"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

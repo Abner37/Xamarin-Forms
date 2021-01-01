@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Controles.ArrastaControle.Arrasta"
+             Padding="10">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="SwipeView" />
+            <Label Text="Propriedades: Posicionamento (SwipeView.SideItems), Text, BackgroundColor, IconImageSource, SwipeBehaviorOnInvoked, Mode" />
+            <Label Text="Evento(s): Invoked, SwipeStarted, SwipeChanging, SwipeEnded, CloseRequested" />
+            <Label Text="Observação: Requisitos - XamarinForms 4.4+, SetFlags('SwipeView_Experimental')" />
+
+            <SwipeView x:Name="swipeView"
+                       Margin="10"
+                       SwipeStarted="SwipeView_SwipeStarted"
+                       SwipeChanging="SwipeView_SwipeChanging"
+                       SwipeEnded="SwipeView_SwipeEnded"
+                       CloseRequested="SwipeView_CloseRequested">
+                
+                <SwipeView.LeftItems>
+                    <SwipeItems SwipeBehaviorOnInvoked="RemainOpen">
+
+                        <SwipeItemView Invoked="SwipeVisualizar_Invoked">
+                            <StackLayout BackgroundColor="LightSkyBlue"
+                                         Padding="20, 15">
+                                <Label Text="Visualizar" TextColor="White" HorizontalOptions="Center"/>
+                                <Label Text="PRODUTO" TextColor="Black" HorizontalOptions="Center"/>
+                            </StackLayout>
+                        </SwipeItemView>
+
+                        <SwipeItem Text="Detalhe" 
+                                   IconImageSource="send.png" 
+                                   BackgroundColor="AliceBlue"
+                                   Invoked="SwipeDetalhe_Invoked"/>
+
+                    </SwipeItems>
+                </SwipeView.LeftItems>
+                
+                <SwipeView.RightItems>
+                    <SwipeItems Mode="Execute">
+                        <SwipeItem Text="Excluir" 
+                                   BackgroundColor="#FFAAAA"
+                                   Invoked="SwipeExcluir_Invoked"/>
+                    </SwipeItems>
+                </SwipeView.RightItems>
+
+                <Frame BorderColor="Gray" BackgroundColor="White">
+                    <Label Text="Arrastar" TextColor="Red" FontSize="24" HorizontalTextAlignment="Center"/>
+                </Frame>
+                
+            </SwipeView>
+
+            <Label x:Name="lblDetalhe" Text="-"/>
+            <Label x:Name="lblVisualizarProduto" Text="-"/>
+            <Label x:Name="lblExcluir" Text="-"/>
+
+            <Label x:Name="lblStarted" Text="-"/>
+            <Label x:Name="lblChaging" Text="-"/>
+            <Label x:Name="lblEnded" Text="-"/>
+
+            <Label x:Name="lblClose" Text="-"/>
+            <Button Text="Fechar SwipeView (swipeView.Close())" Clicked="FecharSwipeView_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

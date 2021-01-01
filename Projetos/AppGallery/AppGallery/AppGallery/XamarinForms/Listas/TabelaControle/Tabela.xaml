@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Listas.TabelaControle.Tabela"
+             
+             Padding="10">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="TableView" />
+
+            <Label Text="Propriedade(s): HasUnevenRows, Intent" />
+            <Label Text="Evento(s): Tapped" />
+
+            <!-- TextCell, ImageCell, EntryCell, ViewCell -->
+            <TableView HasUnevenRows="True">
+                <TableRoot>
+
+                    <TableSection Title="Gerência">
+                        <TextCell Text="Geraldo Rodrigues Souza" TextColor="Black"
+                                  Detail="CEO - Chief Executtive Officer"
+                                  
+                                  Tapped="TextCell_Tapped"/>
+                        <TextCell Text="José Rodrigues Souza" TextColor="Black"
+                                  Detail="CFO - Chief Financial Officer"
+                                  
+                                  Tapped="TextCell_Tapped"/>
+                        <TextCell Text="Edson Rodrigues Souza" TextColor="Black"
+                                  Detail="CTO - Chief Technical Officer"
+                                  
+                                  Tapped="TextCell_Tapped"/>
+                    </TableSection>
+
+                    <TableSection Title="Supervisores">
+                        <ImageCell Text="Alex Ribeiro da Silva" TextColor="Black"
+                                   Detail="Supervisor de TI" 
+                                   ImageSource="perfilsemfoto.jpg"/>
+                    </TableSection>
+
+                    <!-- Formulário -->
+                    
+                    <TableSection Title="Formulário de Cadastro">
+                        
+                        <EntryCell Label="Nome:" LabelColor="Black"
+                                   Placeholder="Nome do funcionário..." Text=""/>
+                        <EntryCell Label="Nome da Mãe:" LabelColor="Black"
+                                   Placeholder="Nome da mãe do funcionário..."/>
+
+                        <SwitchCell Text="É casado?" On="False" OnColor="Green" />
+
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Sexo" Padding="17, 10, 0, 10" VerticalOptions="CenterAndExpand"/>
+                                <RadioButton Text="Masculino" HorizontalOptions="EndAndExpand" />
+                                <RadioButton Text="Feminino" Padding="0,0,10,0" />
+                            </StackLayout>
+                        </ViewCell>]
+                        
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal"
+                                         HorizontalOptions="Center">
+                                <Button Text="Cancelar" TextColor="White"
+                                        BackgroundColor="IndianRed"
+                                        Margin="20,15" Padding="20, 10"/>
+                                <Button Text="Confirmar" TextColor="White" 
+                                        BackgroundColor="CornflowerBlue"
+                                        Margin="20,15" Padding="20, 10"/>
+                            </StackLayout>
+                        </ViewCell>
+                        
+
+                    </TableSection>
+
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

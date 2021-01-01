@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Listas.ListaControle.Lista">
+    <ContentPage.Content>
+        <ListView x:Name="Lista01"
+                  SeparatorVisibility="Default" SeparatorColor="Blue"
+                  HasUnevenRows="True"
+                  Footer="Aqui é o Rodapé" 
+                  VerticalScrollBarVisibility="Never"
+                  IsGroupingEnabled="True"
+                  IsPullToRefreshEnabled="True" RefreshControlColor="Blue" Refreshing="Lista01_Refreshing"
+                  Scrolled="Lista01_Scrolled"
+                  SelectionMode="Single" ItemSelected="Lista01_ItemSelected" ItemTapped="Lista01_ItemTapped"
+                  CachingStrategy="RecycleElement">
+
+            <!--<ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Mobi</x:String>
+                    <x:String>Uno</x:String>
+                    <x:String>Argo</x:String>
+                    <x:String>Cronos</x:String>
+                    <x:String>Toro</x:String>
+                    <x:String>Grand Siena</x:String>
+                    <x:String>Strada</x:String>
+                    <x:String>Dublo</x:String>
+                </x:Array>
+            </ListView.ItemsSource>-->
+
+            <ListView.Header>
+                <StackLayout Margin="10">
+                    <Label Text="ListView"/>
+                    <Label Text="Propriedades: ItemsSource, ItemTemplate, SeparatorVisibility, SeparatorColor, RowHeight, HasUnevenRows, Header, Rodapé, VerticalScrollBarVisibility, IsGroupingEnabled, GroupHeaderTemplate, ContextActions, IsPullToRefreshEnabled, RefreshControlColor, SelectionMode, SelectedItem, CachingStrategy"/>
+                    <Label Text="Eventos: Refreshing, Scrolled, ItemSelected, ItemTapped"/>
+                    <Label x:Name="lblScroll" Text="-"/>
+                    <Button Text="Clique aqui para ir na marca FORD" Clicked="MoverParaFordKa"/>
+                </StackLayout>
+            </ListView.Header>
+
+            <ListView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding Nome}"
+                               TextColor="Blue" FontSize="20" FontAttributes="Bold"
+                               BackgroundColor="#F2F2F2"
+                               Padding="15, 30"/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.GroupHeaderTemplate>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <!--<TextCell Text="{Binding .}" TextColor="Black"
+                                Detail="Fiat"/>-->
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Visualizar" 
+                                      Clicked="MenuItem_Clicked"
+                                      CommandParameter="{Binding .}"/>
+                        </ViewCell.ContextActions>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding Nome}" FontAttributes="Bold" FontSize="16"/>
+                            <Label Text="{Binding Motorizacao}" FontAttributes="Italic"/>
+                            <Label Text="{Binding Descricao}"/>
+                        </StackLayout>
+                    </ViewCell>
+                    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

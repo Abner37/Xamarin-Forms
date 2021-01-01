@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Leiautes.BarraDeRolagemLeiaute.BarraDeRolagem"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+        <ScrollView x:Name="BarraDeRolagemScroll"
+                    Margin="20">
+            <StackLayout>
+
+                <Button Text="Próximo Texto"
+                        BackgroundColor="Black" TextColor="White" 
+                        Clicked="RolarParaSegundaLabel"/>
+
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas ligula sed augue ultrices lobortis. Quisque eu pharetra ex. Ut commodo nec leo id pretium. Pellentesque sagittis diam enim, et venenatis enim viverra sit amet. Praesent convallis mauris purus, non lobortis libero eleifend hendrerit. Aliquam a volutpat velit. Nulla ipsum urna, laoreet a laoreet porta, efficitur at ex. Donec vitae maximus velit. Sed ac nunc aliquet, vestibulum purus ac, consectetur sapien. Donec nec enim ornare, pretium massa quis, semper neque. In laoreet pulvinar hendrerit. Vestibulum malesuada nisi nunc, et venenatis leo sagittis non. Mauris ut ante tortor. Vestibulum ut mi placerat, pellentesque eros vitae, efficitur nunc. Nulla lacinia hendrerit nibh vel semper. In consequat orci turpis, in laoreet velit sodales at.
+Morbi vel purus mattis, gravida turpis eu, vehicula nisl. Quisque lorem neque, tincidunt ac arcu quis, commodo hendrerit ex. Mauris lacinia fermentum consectetur. Proin vitae fringilla purus. Pellentesque commodo ac eros in porttitor. Integer lacinia lorem non egestas elementum. Vestibulum quis sodales nibh. Nunc nec nisi dapibus, tristique nulla eu, facilisis lectus. Morbi viverra, leo sed rutrum vestibulum, nunc ipsum rhoncus eros, quis aliquam mi orci sodales erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+Suspendisse porta aliquet magna. Mauris vel justo et ligula tristique tincidunt. Sed pulvinar lorem dolor, at venenatis magna bibendum nec. Pellentesque eros nisi, fringilla a aliquet quis, luctus sit amet mi. Proin eu condimentum eros. Ut eleifend nisi ut fringilla laoreet. Vivamus a pharetra est, eu ultrices lectus. Integer interdum massa odio, id feugiat nibh aliquam in. Nunc eget lectus ipsum. Suspendisse et massa eu justo lobortis pretium. Nulla facilisi. Sed sollicitudin elit ut orci mollis rutrum. Donec eget tincidunt enim.
+Sed risus erat, accumsan quis varius eget, auctor sit amet est. Morbi fringilla auctor libero, in fringilla tellus scelerisque a. Nunc sed turpis eu erat efficitur tempor. Vestibulum a cursus orci, ut porta nisi. In hac habitasse platea dictumst. Nulla efficitur vitae tellus quis interdum. Curabitur sollicitudin tempus libero, sit amet placerat risus. Nulla eleifend elementum lectus eu varius. Sed vitae metus leo. Cras semper nunc arcu, vitae sagittis lectus porta venenatis. Sed velit eros, imperdiet ut tincidunt at, dignissim nec sapien. Nam eleifend mauris at sem aliquet, vitae suscipit erat viverra. In aliquet enim quis dictum feugiat. Vivamus scelerisque placerat tincidunt.
+Morbi congue mauris in mauris dignissim lobortis. Nullam porta velit nisl, id dapibus ex rutrum id. Donec egestas lacus facilisis mollis convallis. Maecenas vel erat sit amet orci tristique porta non quis augue. Suspendisse tincidunt massa at malesuada facilisis. In nisl est, blandit a pellentesque a, fermentum nec dolor. Aliquam accumsan erat et nisi sodales, vitae faucibus mauris aliquet. In sagittis sapien est, nec tincidunt justo molestie id. Sed cursus turpis sed bibendum semper. Donec eget massa arcu."
+                        BackgroundColor="Black" TextColor="White"
+                        Padding="20"/>
+
+                <Label x:Name="SegundaLabel"
+                        Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas ligula sed augue ultrices lobortis. Quisque eu pharetra ex. Ut commodo nec leo id pretium. Pellentesque sagittis diam enim, et venenatis enim viverra sit amet. Praesent convallis mauris purus, non lobortis libero eleifend hendrerit. Aliquam a volutpat velit. Nulla ipsum urna, laoreet a laoreet porta, efficitur at ex. Donec vitae maximus velit. Sed ac nunc aliquet, vestibulum purus ac, consectetur sapien. Donec nec enim ornare, pretium massa quis, semper neque. In laoreet pulvinar hendrerit. Vestibulum malesuada nisi nunc, et venenatis leo sagittis non. Mauris ut ante tortor. Vestibulum ut mi placerat, pellentesque eros vitae, efficitur nunc. Nulla lacinia hendrerit nibh vel semper. In consequat orci turpis, in laoreet velit sodales at.
+Morbi vel purus mattis, gravida turpis eu, vehicula nisl. Quisque lorem neque, tincidunt ac arcu quis, commodo hendrerit ex. Mauris lacinia fermentum consectetur. Proin vitae fringilla purus. Pellentesque commodo ac eros in porttitor. Integer lacinia lorem non egestas elementum. Vestibulum quis sodales nibh. Nunc nec nisi dapibus, tristique nulla eu, facilisis lectus. Morbi viverra, leo sed rutrum vestibulum, nunc ipsum rhoncus eros, quis aliquam mi orci sodales erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+Suspendisse porta aliquet magna. Mauris vel justo et ligula tristique tincidunt. Sed pulvinar lorem dolor, at venenatis magna bibendum nec. Pellentesque eros nisi, fringilla a aliquet quis, luctus sit amet mi. Proin eu condimentum eros. Ut eleifend nisi ut fringilla laoreet. Vivamus a pharetra est, eu ultrices lectus. Integer interdum massa odio, id feugiat nibh aliquam in. Nunc eget lectus ipsum. Suspendisse et massa eu justo lobortis pretium. Nulla facilisi. Sed sollicitudin elit ut orci mollis rutrum. Donec eget tincidunt enim.
+Sed risus erat, accumsan quis varius eget, auctor sit amet est. Morbi fringilla auctor libero, in fringilla tellus scelerisque a. Nunc sed turpis eu erat efficitur tempor. Vestibulum a cursus orci, ut porta nisi. In hac habitasse platea dictumst. Nulla efficitur vitae tellus quis interdum. Curabitur sollicitudin tempus libero, sit amet placerat risus. Nulla eleifend elementum lectus eu varius. Sed vitae metus leo. Cras semper nunc arcu, vitae sagittis lectus porta venenatis. Sed velit eros, imperdiet ut tincidunt at, dignissim nec sapien. Nam eleifend mauris at sem aliquet, vitae suscipit erat viverra. In aliquet enim quis dictum feugiat. Vivamus scelerisque placerat tincidunt.
+Morbi congue mauris in mauris dignissim lobortis. Nullam porta velit nisl, id dapibus ex rutrum id. Donec egestas lacus facilisis mollis convallis. Maecenas vel erat sit amet orci tristique porta non quis augue. Suspendisse tincidunt massa at malesuada facilisis. In nisl est, blandit a pellentesque a, fermentum nec dolor. Aliquam accumsan erat et nisi sodales, vitae faucibus mauris aliquet. In sagittis sapien est, nec tincidunt justo molestie id. Sed cursus turpis sed bibendum semper. Donec eget massa arcu."
+                        BackgroundColor="Black" TextColor="White"
+                        Padding="20"/>
+
+                <Button Text="Voltar para cima"
+                        BackgroundColor="Black" TextColor="White" 
+                        Clicked="RolarParaCima"/>
+                
+                <ScrollView Orientation="Horizontal"
+                            Margin="0, 50">
+                    <StackLayout Orientation="Horizontal" 
+                                 Margin="10">
+
+                        <BoxView BackgroundColor="Black"
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black"
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+                        <BoxView BackgroundColor="Black" 
+                                 WidthRequest="70" HeightRequest="70"/>
+
+                    </StackLayout>
+                </ScrollView>
+
+                <Button Text="Outro exemplo"
+                        TextColor="White" BackgroundColor="Black"
+                        Clicked="OutroExemplo_Clicked"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>

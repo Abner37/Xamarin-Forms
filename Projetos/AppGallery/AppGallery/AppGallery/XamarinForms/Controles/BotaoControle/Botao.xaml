@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Controles.BotaoControle.Botao">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+
+                <Label Text="Botão Nativo (Sem customização)"/>
+                <Button Text="Botão 0"/>
+                
+                <Label Text="TextColor, BackgroundColor, CornerRadius"/>
+                <Button Text="Botão 01"
+                        TextColor="White" BackgroundColor="Black"
+                        CornerRadius="30"/>
+
+                <Label Text="BorderWidth, BorderColor"/>
+                <Button Text="Botão 02" 
+                        BackgroundColor="White"
+                        BorderWidth="2" BorderColor="Black"
+                        CornerRadius="10"/>
+
+                <Label Text="FontFamily, FontSize, FontAttributes"/>
+                <Button Text="Botão 03"
+                        FontFamily="sans-serif-light" FontSize="Title" FontAttributes="Italic"
+                        BackgroundColor="Black" TextColor="White"
+                        HorizontalOptions="Center"
+                        Padding="45, 15"
+                        CornerRadius="30"/>
+
+                <Label Text="ImageSource, ContentLayout, HorizontalOptions"/>
+                <Button Text="Botão 04" 
+                        ImageSource="send.png"
+                        ContentLayout="Right, 50"
+                        FontSize="24"
+                        BackgroundColor="White"
+                        BorderColor="Black" BorderWidth="2"
+                        CornerRadius="25"
+                        HorizontalOptions="Center"
+                        Padding="30, 10"/>
+
+                <Label Text="Margin, CharacterSpacing"/>
+                <Button Text="Botão 05"
+                        Margin="10, 0, 30, 50"
+                        BackgroundColor="BlueViolet"
+                        CharacterSpacing="3"/>
+
+                <Label Text="VisualStateManager (VisualState: Normal, Pressed)"/>
+                <Button Text="Botão 06"
+                        BorderColor="Black" BorderWidth="2">
+                    
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="White"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Pressed">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Black" />
+                                    <Setter Property="TextColor" Value="White" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                    
+                </Button>
+
+                <Label Text="Eventos: Clicked, Pressed, Released"/>
+                <Button Text="Botão 07"
+                        BackgroundColor="RoyalBlue"
+                        
+                        Clicked="Clicado_Clicked"
+                        Pressed="Pressionado_Pressed"
+                        Released="Liberado_Released"/>
+
+                <Label x:Name="LblClicado"
+                       Text="-"
+                       HorizontalOptions="Center"
+                       FontSize="15"/>
+                <Label x:Name="LblPressionado"
+                       Text="-"
+                       HorizontalOptions="Center"
+                       FontSize="15"/>
+                <Label x:Name="LblLiberado"
+                       Text="-"
+                       HorizontalOptions="Center"
+                       FontSize="15"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Leiautes.ControleLeiaute.Controle"
+             xmlns:controle="clr-namespace:AppGallery.XamarinForms.Leiautes.ControleLeiaute">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <controle:CardHorizontal 
+                    Titulo="Notícia 01" Texto="Texto 01" Cor="DarkGray"/>
+                <controle:CardHorizontal 
+                    Titulo="Notícia 02" Texto="Texto 01" Cor="Gray"/>
+                <controle:CardHorizontal 
+                    Titulo="Notícia 03" Texto="Texto 01" Cor="Black"/>
+                <controle:CardDiretor Nome="Steven Spielberg" Descricao="Diretor que tem mais filmes na lista dos 100 Melhores Filmes Americanos de Todos os Tempos." BoxViewColor="Blue"/>
+                <controle:CardDiretor Nome="David Benioff" Descricao="Um dos diretores da série Game of Thrones." BoxViewColor="Green"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Controles.AtualizaControle.Atualiza">
+    <ContentPage.Content>
+        <RefreshView RefreshColor="Red"
+                     Refreshing="RefreshView_Refreshing">
+            <ScrollView>
+                <StackLayout Padding="10">
+                    <Label Text="RefreshView" />
+                    <Label Text="Propriedades: RefreshColor, IsRefreshing" />
+                    <Label Text="Evento: Refreshing" />
+                    <Label Text="Observação: Barra de Ralagem - ScrollView, ListView, CollectionView, CarouselView" />
+
+                    <Label x:Name="lblSituacao" 
+                           Text="Não Atualizado!"
+                           TextColor="Red" FontSize="24"
+                           VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+                </StackLayout>
+            </ScrollView>
+        </RefreshView>
+    </ContentPage.Content>
+</ContentPage>

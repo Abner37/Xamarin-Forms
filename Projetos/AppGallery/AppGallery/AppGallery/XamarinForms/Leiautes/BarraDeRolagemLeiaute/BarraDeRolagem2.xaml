@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Leiautes.BarraDeRolagemLeiaute.BarraDeRolagem2">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <StackLayout Margin="20">
+                <Label x:Name="Posicao"
+                       Text="Scroll... X: 0 | Y: 0" FontSize="16"
+                       BackgroundColor="Black" TextColor="White"
+                       Padding="10"/>
+            </StackLayout>
+
+            <ScrollView Orientation="Both" Scrolled="ScrollView_Scrolled"
+                        HorizontalScrollBarVisibility="Never"
+                        Margin="20">
+
+                <StackLayout Padding="50">
+                    <BoxView BackgroundColor="Black" WidthRequest="1000" HeightRequest="2"/>
+
+                    <StackLayout Orientation="Horizontal">
+                        <BoxView BackgroundColor="Black" WidthRequest="2" HeightRequest="1000"/>
+
+                        <BoxView BackgroundColor="Black"
+                                 WidthRequest="1000" HeightRequest="1000"/>
+
+                        <BoxView BackgroundColor="Black" WidthRequest="2" HeightRequest="1000"/>
+                    </StackLayout>
+
+                    <BoxView BackgroundColor="Black" WidthRequest="1000" HeightRequest="2"/>
+                </StackLayout>
+
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

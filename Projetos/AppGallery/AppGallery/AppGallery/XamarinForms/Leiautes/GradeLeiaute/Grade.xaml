@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Leiautes.GradeLeiaute.Grade">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#707070"
+              RowSpacing="2" ColumnSpacing="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <!-- <RowDefinition Height="*"/> Valor padrão. Pega o espaço disponível e preenche o máximo para cada um dos componentes igualmente. -->
+                <!-- <RowDefinition Height="200"/> Tamanho fixo em pixels. -->
+                <!-- <RowDefinition Height="2*"/> Tamanho em porcentagem. 2* = 20%; 0.7 = 7% -->
+                <!-- <RowDefinition Height="Auto"/> Expande de acordo com o tamanho do conteúdo. Se não houver conteúdo, não fica visível. -->
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackLayout BackgroundColor="Black"
+                         Grid.ColumnSpan="4" />
+            <!-- O StackLayout acima, está sendo utilizado para configurar a cor de fundo Black,
+                em todas as colunas da primeira linha.
+                 E o Label abaixo está sobrepondo o StackLayout, na mesma posição. -->
+            <Label Text="0" TextColor="White" FontSize="64"
+                   VerticalOptions="Center" HorizontalOptions="End"
+                   Margin="10"
+                   Grid.ColumnSpan="4"/>
+            
+            <Button Grid.Column="0" Grid.Row="1"
+                    Text="C" FontSize="32"
+                    BackgroundColor="#C9CACD"/>
+            <Button Grid.Column="1" Grid.Row="1"
+                    Text="+/-" FontSize="32"
+                    BackgroundColor="#C9CACD"/>
+            <Button Grid.Column="2" Grid.Row="1"
+                    Text="%" FontSize="32"
+                    BackgroundColor="#C9CACD"/>
+
+            <Button Grid.Column="0" Grid.Row="2"
+                    Text="7" FontSize="32"
+                    BackgroundColor="#C9CACD"/>
+            <Button Grid.Column="1" Grid.Row="2"
+                    Text="8" FontSize="32"
+                    BackgroundColor="#C9CACD"/>
+            <Button Grid.Column="2" Grid.Row="2"
+                    Text="9" FontSize="32"
+                    BackgroundColor="#C9CACD"/>
+
+            <Button Grid.Column="0" Grid.Row="3"
+                    Text="4" FontSize="32"
+                    BackgroundColor="#C9CACD"/>
+            <Button Grid.Column="1" Grid.Row="3"
+                    Text="5" FontSize="32"
+                    BackgroundColor="#C9CACD"/>
+            <Button Grid.Column="2" Grid.Row="3"
+                    Text="6" FontSize="32"
+                    BackgroundColor="#C9CACD"/>
+
+            <Button Grid.Column="0" Grid.Row="4"
+                    Text="1" FontSize="32"
+                    BackgroundColor="#C9CACD"/>
+            <Button Grid.Column="1" Grid.Row="4"
+                    Text="2" FontSize="32"
+                    BackgroundColor="#C9CACD"/>
+            <Button Grid.Column="2" Grid.Row="4"
+                    Text="3" FontSize="32"
+                    BackgroundColor="#C9CACD"/>
+
+            <Button Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2"
+                    Text="0" FontSize="32"
+                    BackgroundColor="#C9CACD"/>
+            <Button Grid.Column="2" Grid.Row="5"
+                    Text="." FontSize="32" FontAttributes="Bold"
+                    BackgroundColor="#C9CACD"/>
+
+            <Button Grid.Row="1" Grid.Column="3"
+                    Text="/" FontSize="32" TextColor="White" FontAttributes="Bold"
+                    BackgroundColor="#FB8C0D"/>
+            <Button Grid.Row="2" Grid.Column="3"
+                    Text="X" FontSize="28" TextColor="White"
+                    BackgroundColor="#FB8C0D"/>
+            <Button Grid.Row="3" Grid.Column="3"
+                    Text="-" FontSize="32" TextColor="White" FontAttributes="Bold"
+                    BackgroundColor="#FB8C0D"/>
+            <Button Grid.Row="4" Grid.Column="3"
+                    Text="+" FontSize="32" TextColor="White"
+                    BackgroundColor="#FB8C0D"/>
+            <Button Grid.Row="5" Grid.Column="3"
+                    Text="=" FontSize="32" TextColor="White" FontAttributes="Bold"
+                    BackgroundColor="#FB8C0D"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

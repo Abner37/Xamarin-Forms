@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Name="meuComponente"
+             x:Class="AppGallery.XamarinForms.Leiautes.ControleLeiaute.CardDiretor">
+  <ContentView.Content>
+      <StackLayout Orientation="Horizontal"
+                   Spacing="0"
+                   BindingContext="{x:Reference meuComponente}">
+          
+            <BoxView WidthRequest="100" HeightRequest="100"
+                     Color="{Binding BoxViewColor}"/>
+          
+            <StackLayout BackgroundColor="Black"
+                         Padding="10"
+                         HorizontalOptions="FillAndExpand">
+                <Label Text="{Binding Nome}" 
+                       TextColor="White" FontSize="24"/>
+                <Label Text="{Binding Descricao}" 
+                       TextColor="White" FontSize="18"/>
+            </StackLayout>
+          
+      </StackLayout>
+  </ContentView.Content>
+</ContentView>
